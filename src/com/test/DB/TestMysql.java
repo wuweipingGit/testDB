@@ -67,7 +67,7 @@ public class TestMysql {
     }
     @BeforeClass
     public void beforeClass() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException {
-	    Class.forName(driverClassName).newInstance(); 
+	    Class.forName(driverClassName).newInstance(); //jvm会加载指定类的静态代码到内存中，new会创建一个新的类实例
 	    conn = (Connection) DriverManager.getConnection(url, user, pass); 
     }
 
