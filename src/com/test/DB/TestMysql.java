@@ -80,7 +80,8 @@ public class TestMysql {
 
    	@DataProvider(name="dp")
   	public Object[][] provideDate() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException{
-   		System.out.println("test Git");
+		System.out.println("test Git");
+		System.out.println("add this line by wuweipingGit34 local");
   		return fz.getParametersFromDB(driverClassName,url,conn,user,pass,sqlStr,account);
   		
   	}
